@@ -25,3 +25,28 @@ console.log(a,b,c,d);
 
 let [e,f,...g]=num;
 console.log(e,f,g);
+
+
+// Spread Operator
+
+
+let firstSixMonths =['Jan','Feb','Mar','Apr','May','Jun'];
+let secondSixMonths =['Jul','Aug','Sep','Oct','Nov','Dec'];
+
+let year = [...firstSixMonths,...secondSixMonths];
+console.log('Spread Operater : ', year);
+
+// Rest Operator
+
+let x = 1;
+let y = 2;
+let z = 3;
+console.log('RestOperater : ', addNumbers(x,y,z));
+
+function addNumbers(...num){
+    let res=0;
+    for (let i =0;i<num.length;i++) 
+        res = res + num[i];
+
+    return res;
+}
