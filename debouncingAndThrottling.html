@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="debouncingAndThrottling.js" defer></script>
+    <!-- defer ==> downlaods script paralely and executes only after HTMl documnet is parsed. Therefore doesn't not block parsing -->
+  </head>
+  <body>
+    <div>
+      <input type="text" />
+
+      <div>
+        Default:
+        <span id="default"></span>
+      </div>
+      <div>
+        Debouncing:
+        <span id="debounce"></span>
+      </div>
+      <div>
+        Throttling:
+        <span id="throttle"></span>
+      </div>
+    </div>
+  </body>
+</html>
